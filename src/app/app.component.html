@@ -1,6 +1,18 @@
-<router-outlet></router-outlet>
+<h2>ngIf Example</h2>
+<button (click)="changeValue()"> Change Value of booleanValue Variable to {{!booleanValue}}</button><br>
+<div *ngIf = "booleanValue" class="greenColor">You are seeing this message because booleanValue is set to TRUE</div>
+<div *ngIf = "!booleanValue" class="redColor">You are seeing this message because booleanValue is set to FALSE</div>
 
-<div *ngIf = "booleanValue">You are seeing this message because booleanValue is set to TRUE</div>
+<br><br>
 
-<div *ngIf = "!booleanValue">You are seeing this message because booleanValue is set to FALSE</div>
+<button (click)="changeIntValue()"> Change Value of intValue Variable</button><br>
+Value of intValue is {{intValue}}<br>
+<div *ngIf="intValue>2">You are seeing this because intValue is greater than 2</div>
+<div *ngIf="intValue<2">You are seeing this because intValue is lesser than 2</div>
+
+<h2>ngFor Example - The number in the Array are</h2> 
+<ul>
+  <li *ngFor = "let num of numberArray">{{num}}</li>
+</ul>
+<div *ngFor = "let num of numberArray">{{num}}</div>
 
