@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ngIf-ngFor-ngSwitch';
+
+  booleanValue : boolean = true;
+  intValue : number = 1;
+  
 }
