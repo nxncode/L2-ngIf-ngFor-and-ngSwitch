@@ -16,3 +16,14 @@ Value of intValue is {{intValue}}<br>
 </ul>
 <div *ngFor = "let num of numberArray">{{num}}</div>
 
+<h2>ngSwitch Example</h2>
+<p>Color Selected is {{colorSelected}}</p>
+<p> Using ngSwitch We found out the id of the color is </p>
+  <div [ngSwitch]="colorSelected">
+    <div *ngSwitchCase="'green'">GREEN</div>
+    <div *ngSwitchCase="'blue'">BLUE</div>
+    <div *ngSwitchCase="'red'">RED</div>
+    <div *ngSwitchDefault >No Color Selected</div>
+  </div>
+
+
