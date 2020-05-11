@@ -27,3 +27,8 @@ Value of intValue is {{intValue}}<br>
   </div>
 
 
+<h2> ng-template </h2>
+<div *ngIf="showDiv; then showDiv else hideDiv"></div>
+
+<ng-template #showDiv>Show</ng-template>
+<ng-template #hideDiv>Hide</ng-template>
